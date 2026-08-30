@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aquariOS - Floca Studios</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            padding: 60px 24px; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            text-align: center;
+            color: #333; 
+            background-color: #f9f9f9;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 25%; /* Deixa os cantos arredondados estilo app */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff; /* Fundo branco caso a imagem demore a carregar */
+            object-fit: cover;
+        }
+        h1 { 
+            color: #111; 
+            margin: 0 0 5px 0;
+            font-size: 2em;
+        }
+        .studio-name {
+            color: #666;
+            margin: 0 0 40px 0;
+            font-size: 1.1em;
+        }
+        .links-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .links-container a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 1px solid #0066cc;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .links-container a:hover {
+            background-color: #0066cc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- A tag src abaixo puxa a imagem diretamente da mesma pasta no repositório -->
+    <img src="icon.png" alt="aquariOS Icon" class="app-icon">
+
+    <h1>aquariOS</h1>
+    <p class="studio-name">by Floca Studios</p>
+
+    <div class="links-container">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="eula.html">EULA</a>
+    </div>
+
+</body>
+</html>
