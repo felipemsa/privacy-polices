@@ -1,56 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - aquariOS</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 24px; max-width: 800px; margin: 0 auto; color: #333; }
-        h1, h2, h3 { color: #111; }
-        a { color: #0066cc; }
-        ul { padding-left: 20px; }
-        hr { border: none; border-top: 1px solid #e0e0e0; margin: 30px 0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - aquariOS</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<main class="page">
+  <header class="brand">
+    <img src="icon.png" alt="aquariOS icon">
+    <div><div class="name">aquariOS</div><div class="studio">by Floca Studios</div></div>
+  </header>
+  <nav class="links" aria-label="Legal pages">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+    <a href="eula.html">Terms of Use (EULA)</a>
+  </nav>
 
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-        <img src="icon.png" alt="aquariOS Icon" style="width: 50px; height: 50px; border-radius: 22%; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <h1 style="margin: 0;">Privacy Policy for aquariOS</h1>
-    </div>
-    <p><strong>Last updated:</strong> August 2026</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated"><strong>Last updated:</strong> November 2026</p>
 
-    <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our application <strong>aquariOS</strong> and the choices you have associated with that data.</p>
-
-    <h2>1. Information Collection and Use</h2>
-    <p>For a better experience, while using our Service, the app may use third-party services that collect information used to identify you or your device.</p>
+  <section class="card summary">
+    <h2>In short</h2>
     <ul>
-        <li><strong>Google Play Services:</strong> Used for app runtime, diagnostics, and essential services (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
-        <li><strong>Google AdMob:</strong> Used for ad serving, metrics, and consent management (<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a>).</li>
+      <li>Your aquariums, measurements, tasks, livestock and photos are stored <strong>on your device</strong>. We do not have a server that holds your data.</li>
+      <li>Cloud backup is optional and goes to <strong>your own</strong> Google Drive or iCloud. We cannot read it.</li>
+      <li>We use Google services for ads and anonymous usage statistics, and RevenueCat to manage subscriptions.</li>
     </ul>
+  </section>
 
-    <h2>2. Data Handling & Advertising ID</h2>
-    <p>When you use the app, third-party libraries (specifically Google AdMob) may automatically collect device identifiers (such as Advertising ID), IP address, operating system version, and general usage logs to serve contextual or personalized advertisements according to your consent choices.</p>
+  <section class="card">
+    <h2>1. Data stored on your device</h2>
+    <p>Everything you create in aquariOS (aquariums, water parameters, maintenance tasks, the species you add to your aquariums and the photos you take of them) is saved locally on your device. Uninstalling the app deletes this data unless you made a backup.</p>
+    <p>Photos you take or choose are copied into the app's private storage. The app only accesses the camera or your photo library when you ask it to, and only saves a photo to your gallery when you tap "Save to gallery".</p>
+  </section>
 
-    <h2>3. Privacy Regulations Compliance</h2>
-    <h3>GDPR (European Economic Area & UK)</h3>
-    <p>Users in the EEA/UK are prompted with a consent dialog via Google's User Messaging Platform (UMP). You can change or revoke your consent preferences at any time in the app settings.</p>
+  <section class="card">
+    <h2>2. Optional cloud backup</h2>
+    <ul>
+      <li><strong>Android (Google Drive):</strong> when you tap the connect button, you sign in with Google and authorize the app to use a private app folder in your Google Drive (<em>appDataFolder</em>). The app only reads and writes its own backup files there. It cannot see your other Drive files.</li>
+      <li><strong>iOS (iCloud):</strong> backups are saved in the app's iCloud container in your Apple account.</li>
+      <li>Backups contain your app data and, if the "Include livestock photos" option is on, your livestock photos. You can turn photos off, delete only the photos or delete the whole backup from the Backup screen.</li>
+      <li>Floca Studios has no access to your Google or Apple credentials, your backup files or their content.</li>
+    </ul>
+  </section>
 
+  <section class="card">
+    <h2>3. Third-party services</h2>
+    <ul>
+      <li><strong>Google AdMob</strong> (free plan): serves ads and may collect device identifiers (such as the Advertising ID), IP address, device and OS information and usage data, according to your consent choices. <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob policies</a>.</li>
+      <li><strong>Google Analytics for Firebase:</strong> collects anonymous usage statistics (for example, which screens are used, app version, device model, approximate region) and app events that help us improve the app. It does not receive your aquarium data, photos or backup. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a>.</li>
+      <li><strong>RevenueCat</strong> (subscriptions): processes your purchase and subscription status through Google Play or the App Store, using an anonymous app user ID. We never see your payment details. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat privacy</a>.</li>
+      <li><strong>Google Sign-In / Sign in with Apple:</strong> used only to connect your own cloud storage for backup and restore.</li>
+      <li><strong>Cloudflare</strong> (content delivery): the species catalog photos are downloaded from our content server on Cloudflare. As with any web request, Cloudflare processes your IP address and standard technical data to deliver the files. No personal data is sent. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare privacy</a>.</li>
+      <li><strong>Google Play Services:</strong> app runtime and essential services. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy</a>.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>4. Species catalog feedback</h2>
+    <p>To improve the species catalog, the app sends the following through Google Analytics for Firebase, without your name, email or account:</p>
+    <ul>
+      <li>search terms that returned no species (shortened to 40 characters);</li>
+      <li>which species are viewed and added to aquariums, and the aquarium type;</li>
+      <li>species suggestions and error reports you choose to send, including the optional short comment you type.</li>
+    </ul>
+    <p>Please do not include personal information (such as your name, phone or email) in suggestions or comments.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Notifications</h2>
+    <p>Maintenance reminders are scheduled locally on your device. They are not sent through our servers.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Retention and deletion</h2>
+    <ul>
+      <li>Data on your device: deleted when you remove it in the app or uninstall the app.</li>
+      <li>Cloud backup: deleted from the Backup screen, or directly from your Google Drive or iCloud settings.</li>
+      <li>Analytics data: kept by Google according to the Google Analytics data retention settings, then deleted automatically.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>7. Your privacy rights</h2>
+    <h3>GDPR (European Economic Area and UK)</h3>
+    <p>Users in the EEA/UK see a consent dialog through Google's User Messaging Platform (UMP). You can change or revoke your consent at any time in the app settings.</p>
     <h3>LGPD (Brazil)</h3>
-    <p>In compliance with the Lei Geral de Proteção de Dados (LGPD), any data processed by integrated advertising SDKs respects transparency, purpose limitation, and user privacy rights.</p>
+    <p>We process data in line with the Lei Geral de Proteção de Dados, respecting transparency, purpose limitation and your rights to access, correction and deletion.</p>
+    <h3>US state privacy laws (CCPA / CPRA)</h3>
+    <p>Residents of applicable US states can opt out of the "sale" or "sharing" of personal information for targeted advertising through the in-app privacy form.</p>
+    <p>To exercise any right, contact us at the email below.</p>
+  </section>
 
-    <h3>US State Privacy Laws (CCPA / CPRA)</h3>
-    <p>Users residing in applicable US states have the right to opt-out of the "sale" or "sharing" of personal information for targeted advertising via the in-app privacy form.</p>
+  <section class="card">
+    <h2>8. Children's privacy</h2>
+    <p>The app is not directed to anyone under 13. We do not knowingly collect personal information from children.</p>
+  </section>
 
-    <h2>4. Children's Privacy</h2>
-    <p>This app does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children.</p>
+  <section class="card">
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy. The date at the top shows the latest version.</p>
+  </section>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+  <section class="card">
+    <h2>10. Contact</h2>
+    <p>Questions, suggestions or privacy requests: <a href="mailto:floca.studios@gmail.com">floca.studios@gmail.com</a></p>
+  </section>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions regarding this Privacy Policy, contact us at:<br>
-    <strong>Email:</strong> floca.studios@gmail.com</p>
-
+  <footer>© 2026 Floca Studios</footer>
+</main>
 </body>
 </html>
